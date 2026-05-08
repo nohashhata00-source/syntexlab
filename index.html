@@ -8,30 +8,115 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta name ="viewport" content="width=device-width,initial-scale=1.0">
     <style>
-        @media (max-width: 600px) {
-    /* 1. خلي أي عناصر جنب بعض تنزل تحت بعض */
-    .container, .row, header, footer {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-
-    /* 2. إلغي العرض الثابت لأي عنصر */
-    div, section, table, aside {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-    /* 3. صغر الخطوط الكبيرة اللي بتبوظ العرض */
-    h1 { font-size: 24px !important; }
-    h2 { font-size: 20px !important; }
-    p  { font-size: 16px !important; }
+     
+/* 1. إعدادات عامة لضمان التجاوب */
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+    background-image: url(BNtvaF2SNZm2BTRMJt7i3c.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; /* بيمنع الهزة اليمين والشمال */
+}
+
+/* 2. الهيدر (تعديل عشان الموبايل) */
+.apperheader {
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* عشان ينزل تحت بعض لو الشاشة صغيرة */
+}
+
+.one a {
+    color: rgb(25, 15, 35);
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 3. الأقسام الرئيسية */
+.onesection {
+    padding: 40px 10px;
+    min-height: 40vh;
+    background-image: linear-gradient(black, rgba(98, 137, 255, 0.575));
+    text-align: center;
+}
+
+.big-text {
+    font-size: clamp(1.5rem, 6vw, 4rem); /* حجم خط مرن */
+    margin: 10px 0;
+}
+
+/* 4. قسم اللغات (التعديل الجوهري هنا) */
+.base {
+    display: flex;
+    color: #446cff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* تعديل الزراير عشان متبقاش بعيدة عن بعض */
+.onebotton, .twobotton, .threabotton {
+    display: flex;
+    gap: 20px; /* مسافة معقولة بدل 500 */
+    justify-content: center;
+    flex-wrap: wrap; /* يخليهم تحت بعض في الموبايل */
+}
+
+.onebotton a, .twobotton a, .threabotton a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(3rem, 10vw, 6rem); /* حجم الأيقونة هيبقى كبير بس معقول */
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.onebotton a { color: rgb(192, 211, 253); }
+.twobotton a { color: rgb(131, 185, 255); }
+.threabotton a { color: rgb(141, 205, 255); }
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.thsection {
+    background-attachment: fixed;
+    background-color: #000000a9;
+    padding: 50px 20px;
+    color: white;
+}
+
+/* 5. ميديا كويري للموبايل (عشان يظبط المقاسات الكبيرة جداً) */
+@media (max-width: 600px) {
+    .onebotton, .twobotton, .threabotton {
+        gap: 30px;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    .apperheader {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+    
         /* الخلطة السحرية للتجاوب السريع */
 * {
     box-sizing: border-box; /* بيخلي الحسابات دقيقة للمقاسات */
