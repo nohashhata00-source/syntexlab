@@ -6,6 +6,30 @@
     <title>syntaxlap</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* 1. بيخلي الحسابات دقيقة للهوامش عشان مفيش حاجة تطلع بره */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. بيمنع السكرول بالعرض اللي بيخلي الشكل يبوظ */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* 3. تعديل العناصر اللي في الصورة */
+.container {
+    width: 90%;          /* بدل ما تستخدم عرض ثابت بالـ px */
+    margin: 0 auto;      /* عشان يوسطن المحتوى */
+}
+
+/* 4. لو عندك صور، خليها دايماً مرنة */
+img {
+    max-width: 100%;
+    height: auto;
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
