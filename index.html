@@ -161,6 +161,55 @@
             padding: 100px;
             ;
         }
+        /* كود الإنقاذ السريع للموبايل */
+@media (max-width: 600px) {
+    /* 1. إلغاء المسافات الضخمة */
+    .onebotton, .twobotton, .threabotton {
+        gap: 20px !important; /* بدل الـ 500 اللي كانت بتبوظ الدنيا */
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+
+    /* 2. تصغير حجم الأيقونات والخطوط الخرافية */
+    .onebotton a, .twobotton a, .threabotton a {
+        font-size: 80px !important; /* مقاس معقول للموبايل */
+    }
+
+    h1, .big-text {
+        font-size: 35px !important; /* عشان العنوان ميبقاش أكبر من الشاشة */
+    }
+
+    /* 3. الهيدر (القائمة اللي فوق) */
+    .apperheader {
+        flex-direction: column !important; /* اللوجو فوق واللينكات تحت */
+        padding: 10px !important;
+        height: auto !important;
+    }
+
+    .one {
+        margin-top: 10px !important;
+        display: flex !important;
+        gap: 10px !important;
+    }
+
+    .one a {
+        margin: 0 !important;
+        font-size: 14px !important;
+    }
+
+    /* 4. منع الصفحة من الهزة يمين وشمال */
+    body, html {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* 5. تظبط قسم الجامعة (اللي تحت خالص) */
+    .thsection h1, .thsection h {
+        font-size: 20px !important;
+        margin-left: 5% !important;
+        display: block !important;
+    }
+}
 
     </style>
 </head>
