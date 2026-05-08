@@ -5,10 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Syntex Lab</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
     <style>
+        /* الخلطة السحرية للتجاوب السريع */
+* {
+    box-sizing: border-box; /* بيخلي الحسابات دقيقة للمقاسات */
+}
+
+body, html {
+    overflow-x: hidden; /* بيمنع الصفحة تروح يمين وشمال (السكروول الرخم) */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+    max-width: 100%; /* أي صورة تلم نفسها على قد الشاشة */
+    height: auto;
+}
+
+div, section, header {
+    max-width: 100%; /* أي حاجة كبيرة تلم نفسها */
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
