@@ -6,39 +6,6 @@
     <style>
 
 
-/* ميديا كويري: بيتنفذ بس لما الشاشة تكون أصغر من 600 بكسل */
-@media screen and (max-width: 600px) {
-
-    /* 1. منع الصفحة تروح يمين وشمال (أهم سطر) */
-    html, body {
-        overflow-x: hidden !important;
-        position: relative;
-    }
-
-    /* 2. تصغير الخطوط اللي كانت بتمط الصفحة بالعرض */
-    .big-text, h1, h2 {
-        font-size: 28px !important; /* مقاس معقول للموبايل */
-        word-wrap: break-word;
-    }
-
-    /* 3. حل مشكلة الـ 500px (الزراير) */
-    .onebotton, .twobotton, .threabotton {
-        gap: 20px !important; /* مسافة صغيرة */
-        flex-direction: row !important; /* خليهم جنب بعض */
-        justify-content: center !important;
-        width: 100% !important;
-    }
-
-    .onebotton a, .twobotton a, .threabotton a {
-        font-size: 50px !important; /* تصغير الأيقونات عشان تقضي الشاشة */
-    }
-
-    /* 4. تظبط الهيدر عشان ميبقاش زحمة */
-    .apperheader {
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 5px !important;
-    }
 
     .one {
         margin: 5px 0 !important;
@@ -210,6 +177,39 @@
             padding: 100px;
             ;
         }
+/* ميديا كويري: بيتنفذ بس لما الشاشة تكون أصغر من 600 بكسل */
+@media screen and (max-width: 600px) {
+
+    /* 1. منع الصفحة تروح يمين وشمال (أهم سطر) */
+    html, body {
+        overflow-x: hidden !important;
+        position: relative;
+    }
+
+    /* 2. تصغير الخطوط اللي كانت بتمط الصفحة بالعرض */
+    .big-text, h1, h2 {
+        font-size: 28px !important; /* مقاس معقول للموبايل */
+        word-wrap: break-word;
+    }
+
+    /* 3. حل مشكلة الـ 500px (الزراير) */
+    .onebotton, .twobotton, .threabotton {
+        gap: 20px !important; /* مسافة صغيرة */
+        flex-direction: row !important; /* خليهم جنب بعض */
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .onebotton a, .twobotton a, .threabotton a {
+        font-size: 50px !important; /* تصغير الأيقونات عشان تقضي الشاشة */
+    }
+
+    /* 4. تظبط الهيدر عشان ميبقاش زحمة */
+    .apperheader {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 5px !important;
+    }
 
     </style>
 </head>
@@ -273,7 +273,6 @@
             <a href="java.html"><i class="fa-brands fa-java"></i></a>
             <a href="JavaScript.html"><i class="fa-brands fa-js"></i></a>
         </div>
-    </div>
 
     </div>
     <div class="thsection">
