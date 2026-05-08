@@ -47,6 +47,23 @@
         a:hover {
             color: rgb(17, 17, 69);
         }
+        @media (max-width: 600px) {
+    h1 {
+        font-size: 40px; /* صغر كلمة CSS الكبيرة */
+        text-align: center;
+    }
+    
+    .text-section {
+        padding: 20px;
+        text-align: left; /* أو center حسب رغبتك */
+    }
+
+    /* لو كنت مستخدم position: absolute لغيها في الموبايل */
+    .your-element-name {
+        position: static !important;
+        width: 100% !important;
+    }
+}
      
     </style>
 </head>
