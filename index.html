@@ -1,31 +1,15 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Syntex Lab</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
-
-
-
-    .one {
-        margin: 5px 0 !important;
-    }
-
-    .one a {
-        margin-left: 8px !important;
-        font-size: 12px !important;
-    }
-
-    /* 5. قسم الجامعة (تحت خالص) */
-    .thsection h1, .thsection h {
-        margin-left: 10px !important;
-        font-size: 18px !important;
-    }
-}
-
-
-
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -177,39 +161,6 @@
             padding: 100px;
             ;
         }
-/* ميديا كويري: بيتنفذ بس لما الشاشة تكون أصغر من 600 بكسل */
-@media screen and (max-width: 600px) {
-
-    /* 1. منع الصفحة تروح يمين وشمال (أهم سطر) */
-    html, body {
-        overflow-x: hidden !important;
-        position: relative;
-    }
-
-    /* 2. تصغير الخطوط اللي كانت بتمط الصفحة بالعرض */
-    .big-text, h1, h2 {
-        font-size: 28px !important; /* مقاس معقول للموبايل */
-        word-wrap: break-word;
-    }
-
-    /* 3. حل مشكلة الـ 500px (الزراير) */
-    .onebotton, .twobotton, .threabotton {
-        gap: 20px !important; /* مسافة صغيرة */
-        flex-direction: row !important; /* خليهم جنب بعض */
-        justify-content: center !important;
-        width: 100% !important;
-    }
-
-    .onebotton a, .twobotton a, .threabotton a {
-        font-size: 50px !important; /* تصغير الأيقونات عشان تقضي الشاشة */
-    }
-
-    /* 4. تظبط الهيدر عشان ميبقاش زحمة */
-    .apperheader {
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 5px !important;
-    }
 
     </style>
 </head>
@@ -217,7 +168,7 @@
 <body>
     <header class="apperheader">
         <h2 style="color: rgb(255, 255, 255); background-color: #000000; padding: 5px 15px; border-radius: 8px;">
-            SYNTAXLAB
+            SYNTEX LAB
         </h2>
 
         <nav class="one">
@@ -231,11 +182,11 @@
     <div class="onesection">
 
         <h1 class="big-text" style="color:rgb(155, 217, 255);">
-            <i>Hello!</i>
+            <i>Hallo!</i>
         </h1>
 
         <h1 class="big-text" style="color:aliceblue;font-size: 800%;">
-            SyntaxLab
+            Syntex Lab
         </h1>
 
         <p class="big-text" style="color:rgb(170, 191, 246);">
@@ -254,7 +205,7 @@
 
     </div>
 
-     <div class="base">
+    <div class="base">
         <h1
             style="font-size:800%;align-items: center;background-image: linear-gradient(rgb(4, 28, 55) ,rgb(14, 17, 18));border-radius: 40px;color: aliceblue;border-style:double;">
             Explor Coding</h1>
@@ -273,6 +224,7 @@
             <a href="java.html"><i class="fa-brands fa-java"></i></a>
             <a href="JavaScript.html"><i class="fa-brands fa-js"></i></a>
         </div>
+    </div>
 
     </div>
     <div class="thsection">
