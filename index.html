@@ -4,10 +4,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Syntex Lab</title>
+    <title>SyntaxLab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta name ="viewport" content="width=device-width,initial-scale=1.0">
     <style>
+        @media (max-width: 600px) {
+    /* 1. خلي أي عناصر جنب بعض تنزل تحت بعض */
+    .container, .row, header, footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 2. إلغي العرض الثابت لأي عنصر */
+    div, section, table, aside {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* 3. صغر الخطوط الكبيرة اللي بتبوظ العرض */
+    h1 { font-size: 24px !important; }
+    h2 { font-size: 20px !important; }
+    p  { font-size: 16px !important; }
+}
         /* الخلطة السحرية للتجاوب السريع */
 * {
     box-sizing: border-box; /* بيخلي الحسابات دقيقة للمقاسات */
@@ -200,7 +224,7 @@ div, section, header {
     <div class="onesection">
 
         <h1 class="big-text" style="color:rgb(155, 217, 255);">
-            <i>Hallo!</i>
+            <i>Hello!</i>
         </h1>
 
         <h1 class="big-text" style="color:aliceblue;font-size: 800%;">
