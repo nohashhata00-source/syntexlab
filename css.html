@@ -1,114 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>syntaxlap</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* ده هيجبر أي حاجة خارجة بره الشاشة إنها تختفي أو تتلم */
-body, html {
-    overflow-x: hidden !important; 
-    width: 100% !important;
-    position: relative;
+          body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+   
+   background-image: url(1777441964576.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size:cover;
 }
-
-/* ده هيخلي كل العناصر "تتحبس" جوه عرض الشاشة */
-* {
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
-}
-
-/* لو الكلمة واخدة margin-left كبير، ده هيصفرها في الموبايل */
-@media (max-width: 600px) {
-    .container, div, section, h1, p {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        text-align: center !important; /* هيوسطن لك الكلام عشان يظبط */
-    }
-} 
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url(1777441964576.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
         .highlight {
-            background-color: rgb(17, 17, 69);
+            background-image: linear-gradient(rgb(81, 81, 236), white);
             border-radius: 40px;
-            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: inline-block;
             font-size: 200%;
             padding: 5px 20px;
-            color: white;
         }
 
         .ti {
             text-align: center;
-            color: rgb(17, 17, 69);
-            font-size: 100px;
-            margin: 20px 0;
+            color : rgb(81, 81, 206);
+            font-size:100px;
         }
-
-        .content {
-            margin-left: 200px;
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
-        a {
-            font-size: 50px;
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            color: rgb(17, 17, 69);
-        }
-       
+    </style>
 </head>
 
 <body>
+    <h1 class="ti">css</h1>
 
-    <h1 class="ti">CSS</h1>
+    <h4><mark class="highlight"><i> why css was created</i></mark></h4>
+    <br>
 
-    <h4>
-        <mark class="highlight"><i>Why CSS was created</i></mark>
-    </h4>
+    <h3><p style="margin-left: 200px;"><strong>_</strong>Design & Control: It gives you total power over how your site looks—colors, fonts, spacing, and layouts. Without it, every website would look like a boring 1990s research paper.</strong>></p>
 
-    <div class="content">
-        <p><strong>_</strong> Design & Control: It gives you total power over how your site looks—colors, fonts, spacing, and layouts. Without it, every website would look like a boring 1990s research paper.</p>
+    <p style="margin-left: 200px;"><strong>_</strong>Efficiency (The "One-File" Rule): You can style 1,000 pages at once by linking them to a single CSS file. If you want to change your brand color from blue to green, you change one line of code, not 1,000 pages.</p>
+        
+    </p style="margin-left: 200px;"><strong>_<strong> Responsiveness: It allows your website to "shape-shift." Using CSS, you can tell a website to look one way on a desktop and completely rearrange itself for a tiny smartphone screen.</p>
+        
+    <p style="margin-left: 200px;"><strong>_</strong>User Experience (UX): CSS handles things like button hover effects, smooth transitions, and clean layouts that make a site feel professional and easy to navigate.</p></h3>
+<br>
+    <h4><mark class="highlight"><i> road map for learning</i></mark></h4>
+    <br>
+    <h3><p style="margin-left: 200px;"> <strong>_</strong>Foundations: Selectors, Specificity, and the Box Model (Margin, Border, Padding).</p>
+     <p style="margin-left: 200px;"> <strong>_</strong> Typography & Colors: Fonts, text alignment, and color systems (Hex, RGB).</p>
+        
+       <p style="margin-left: 200px;"><strong>_</strong>Layouts: Mastering Flexbox and CSS Grid for structuring pages.</p>
+        
+        <p style="margin-left: 200px;"><strong>_</strong>Positioning: Understanding absolute, relative, and fixed placements.</p>
+        
+        <p style="margin-left: 200px;"><strong>_</strong>Responsiveness: Using Media Queries to make sites work on mobile.</p>
+        
+      <p style="margin-left: 200px;"> <strong>_</strong>Animations: Using transitions and keyframes for smooth movement.</p>
+        
+       <p style="margin-left: 200px;"><strong>_</strong> Modern Tools: CSS Variables and Preprocessors like Sass.</p></h3>
 
-        <p><strong>_</strong> Efficiency: You can style 1,000 pages at once by linking them to a single CSS file.</p>
-
-        <p><strong>_</strong> Responsiveness: It allows your website to adapt for different screen sizes like mobile and desktop.</p>
-
-        <p><strong>_</strong> User Experience (UX): CSS improves interaction like hover effects, animations, and layout clarity.</p>
-    </div>
-
-    <h4>
-        <mark class="highlight"><i>Road map for learning</i></mark>
-    </h4>
-
-    <div class="content">
-        <p><strong>_</strong> Foundations: Selectors, Specificity, Box Model (Margin, Border, Padding).</p>
-        <p><strong>_</strong> Typography & Colors: Fonts, alignment, Hex & RGB colors.</p>
-        <p><strong>_</strong> Layouts: Flexbox and CSS Grid.</p>
-        <p><strong>_</strong> Positioning: relative, absolute, fixed.</p>
-        <p><strong>_</strong> Responsiveness: Media Queries.</p>
-        <p><strong>_</strong> Animations
-           </p>
-           </div>
-
-            <h4><mark class="highlight"><i> Free Playlist course ^_^ </i></mark></h4>
-            <br>
+<br>
+    <h4><mark class="highlight"><i> Free Playlist course ^_^ </i></mark></h4>
+    <br>
     <div class="like">
     <a href="https://www.youtube.com/c/ElzeroInfo/playlists" target ="_blank">go to course</a>
     </div>
